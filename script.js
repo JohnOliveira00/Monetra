@@ -63,3 +63,37 @@ window.onclick = (e) => {
     modal.classList.remove("show");
   }
 };
+
+/* SCROLL REVEAL */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 1800,
+  delay: 200,
+  reset: false,
+});
+
+sr.reveal('.home__subtitle', { delay: 200 });
+sr.reveal('.home__title', { delay: 220 });
+sr.reveal('.home__description', { delay: 500 });
+sr.reveal('.buttons', { delay: 600 });
+sr.reveal('.hero-image', { delay: 700 });
+sr.reveal('.tag', { delay: 200 });
+
+sr.reveal(".problema .card", { delay: 200 });
+sr.reveal(".problema-grid .card", { delay: 200 });
+
+sr.reveal(".solucao .card", { delay: 200 });
+sr.reveal(".solucao-grid .card", { delay: 200 });
+
+sr.reveal(".demo .tag", { delay: 200 });
+sr.reveal(".demo h2", { delay: 220 });
+sr.reveal(".demo p", { delay: 400 });
+sr.reveal(".demo .tabs", { delay: 300 });
+sr.reveal(".demo .phone", { delay: 200 });
+
+sr.reveal(".beneficios .card", { delay: 200 });
+sr.reveal(".beneficios-grid .card", { delay: 200 });
+
+sr.reveal(".planos h2", { delay: 200 });
+sr.reveal(".planos-grid", { delay: 400 });
