@@ -77,6 +77,7 @@ sr.reveal('.home__subtitle', { delay: 200 });
 sr.reveal('.home__title', { delay: 220 });
 sr.reveal('.home__description', { delay: 500 });
 sr.reveal('.buttons', { delay: 600 });
+sr.reveal('.social-proof', { delay: 700 });
 sr.reveal('.hero-image', { delay: 700 });
 sr.reveal('.tag', { delay: 200 });
 
@@ -96,4 +97,5 @@ sr.reveal(".beneficios .card", { delay: 200 });
 sr.reveal(".beneficios-grid .card", { delay: 200 });
 
 sr.reveal(".planos h2", { delay: 200 });
-sr.reveal(".planos-grid", { delay: 400 });
+sr.reveal(".planos p", { delay: 300 });
+sr.reveal(".planos", { delay: 200 });

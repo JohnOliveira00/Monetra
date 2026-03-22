@@ -93,7 +93,7 @@ header .cta:hover {
 }
 
 .hero h1 {
-       font-size: 48px;
+       font-size: 40px;
        margin: 20px 0;
        line-height: 1.2;
 }
@@ -120,6 +120,14 @@ header .cta:hover {
        font-weight: bold;
 }
 
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
 .primary {
        background: #f97316;
        color: white;
@@ -128,6 +136,23 @@ header .cta:hover {
 .secondary {
        background: rgba(255, 255, 255, 0.1);
        color: white;
+}
+
+/* SOCIAL */
+.social-proof {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatars span {
+  width: 30px;
+  height: 30px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -8px;
 }
 
 /* IMAGE */
