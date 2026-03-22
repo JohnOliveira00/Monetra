@@ -1,8 +1,13 @@
+html {
+       scroll-behavior: smooth;
+}
+
 body {
        margin: 0;
-       font-family: Arial;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        background: #020617;
        color: #fff;
+       overflow-x: hidden;
 }
 
 /* NAV */
@@ -125,23 +130,6 @@ header .cta:hover {
        color: white;
 }
 
-/* SOCIAL */
-.social-proof {
-       margin-top: 30px;
-       display: flex;
-       align-items: center;
-       gap: 10px;
-}
-
-.avatars span {
-       width: 30px;
-       height: 30px;
-       background: #22c55e;
-       border-radius: 50%;
-       display: inline-block;
-       margin-left: -8px;
-}
-
 /* IMAGE */
 .hero-image {
        position: relative;
@@ -169,6 +157,11 @@ header .cta:hover {
        padding: 15px;
        border-radius: 15px;
        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.floating-card small {
+       font-size: 14px;
+       color: #22c55e;
 }
 
 /* RESPONSIVO */
@@ -199,9 +192,185 @@ section {
 }
 
 /* PROBLEMA */
-.problema ul {
-       list-style: none;
-       padding: 0;
+.problema {
+       background: #f8fafc;
+       padding: 100px 20px;
+       text-align: center;
+       min-height: 60vh;
+}
+
+.problema .tag {
+       color: #f97316;
+       font-size: 12px;
+       font-weight: bold;
+       letter-spacing: 2px;
+}
+
+.problema h2 {
+       font-size: 36px;
+       margin: 10px 0;
+       color: #0f172a;
+}
+
+.problema .subtitle {
+       color: #64748b;
+       max-width: 600px;
+       margin: 0 auto 50px;
+}
+
+/* GRID */
+.problema-grid {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 25px;
+       max-width: 1100px;
+       margin: auto;
+}
+
+/* CARDS */
+.problema .card {
+       background: #fff;
+       padding: 25px;
+       border-radius: 15px;
+       text-align: left;
+
+       border: 1px solid #f1f5f9;
+       transition: 0.3s;
+}
+
+.problema .card:hover {
+       transform: translateY(-5px);
+}
+
+/* ÍCONE */
+.problema .icon {
+       width: 45px;
+       height: 45px;
+       background: #fee2e2;
+       color: #ef4444;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 12px;
+       margin-bottom: 15px;
+       font-size: 20px;
+}
+
+/* TEXTO */
+.problema h3 {
+       margin-bottom: 8px;
+       color: #0f172a;
+}
+
+.problema p {
+       font-size: 14px;
+       color: #64748b;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+       .problema-grid {
+              grid-template-columns: 1fr 1fr;
+       }
+}
+
+@media (max-width: 600px) {
+       .problema-grid {
+              grid-template-columns: 1fr;
+       }
+}
+
+/* SOLUÇÃO */
+.solucao {
+       background: #f8fafc;
+       padding: 100px 20px;
+       text-align: center;
+}
+
+.solucao .tag {
+       color: #f97316;
+       font-size: 12px;
+       font-weight: bold;
+       letter-spacing: 2px;
+}
+
+.solucao h2 {
+       font-size: 36px;
+       margin: 10px 0;
+       color: #0f172a;
+}
+
+.solucao .subtitle {
+       color: #64748b;
+       max-width: 600px;
+       margin: 0 auto 50px;
+}
+
+/* GRID */
+.solucao-grid {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 25px;
+       max-width: 1100px;
+       margin: auto;
+}
+
+/* CARDS */
+.solucao .card {
+       background: #fff;
+       padding: 25px;
+       border-radius: 15px;
+       text-align: left;
+
+       border: 1px solid #f1f5f9;
+       transition: 0.3s;
+}
+
+.solucao .card:hover {
+       transform: translateY(-5px);
+}
+
+/* DESTAQUE (igual o print com borda) */
+.solucao .destaque {
+       border: 2px solid #f97316;
+}
+
+/* ÍCONE */
+.solucao .icon {
+       width: 45px;
+       height: 45px;
+       background: #f97316;
+       color: #fff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 12px;
+       margin-bottom: 15px;
+       font-size: 20px;
+}
+
+/* TEXTO */
+.solucao h3 {
+       margin-bottom: 8px;
+       color: #0f172a;
+}
+
+.solucao p {
+       font-size: 14px;
+       color: #64748b;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+       .solucao-grid {
+              grid-template-columns: 1fr 1fr;
+       }
+}
+
+@media (max-width: 600px) {
+       .solucao-grid {
+              grid-template-columns: 1fr;
+       }
 }
 
 /* CARDS */
@@ -412,16 +581,207 @@ section {
 }
 
 /* CTA */
-.cta {
-       background: #22c55e;
-       color: black;
+.cta-final {
+       text-align: center;
+       padding: 100px 20px;
+
+       background: radial-gradient(circle at 50% 30%, #1e293b, #020617);
+       color: white;
+}
+
+/* TAG */
+.cta-final .tag {
+       background: rgba(255, 255, 255, 0.1);
+       padding: 6px 14px;
+       border-radius: 20px;
+       font-size: 12px;
+       color: #facc15;
+}
+
+/* TÍTULO */
+.cta-final h2 {
+       font-size: 40px;
+       margin: 20px 0;
+}
+
+.cta-final h2 span {
+       color: #f97316;
+}
+
+/* TEXTO */
+.cta-final p {
+       color: #94a3b8;
+       max-width: 600px;
+       margin: 0 auto 30px;
+}
+
+/* BOTÕES */
+.cta-final .buttons {
+       display: flex;
+       justify-content: center;
+       gap: 15px;
+       margin-bottom: 20px;
+}
+
+.cta-final .btn {
+       padding: 14px 28px;
+       border-radius: 30px;
+       text-decoration: none;
+       font-weight: bold;
+       transition: 0.3s;
+}
+
+/* BOTÃO PRINCIPAL */
+.cta-final .primary {
+       background: linear-gradient(90deg, #facc15, #f97316);
+       color: white;
+}
+
+.cta-final .primary:hover {
+       transform: scale(1.05);
+}
+
+/* BOTÃO SECUNDÁRIO */
+.cta-final .secondary {
+       background: rgba(255, 255, 255, 0.1);
+       color: white;
+}
+
+.cta-final .secondary:hover {
+       background: rgba(255, 255, 255, 0.2);
+}
+
+/* TEXTO FINAL */
+.cta-final small {
+       color: #64748b;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+       .cta-final h2 {
+              font-size: 28px;
+       }
+
+       .cta-final .buttons {
+              flex-direction: column;
+       }
+}
+
+.footer {
+       background: #020617;
+       color: #94a3b8;
+       padding: 40px 20px;
+       text-align: center;
+}
+
+.footer-content {
+       margin-bottom: 20px;
+}
+
+.footer h3 {
+       color: white;
+       margin-bottom: 10px;
+}
+
+.footer .links {
+       display: flex;
+       justify-content: center;
+       gap: 20px;
+}
+
+.footer .links a {
+       color: #64748b;
+       text-decoration: none;
+       font-size: 14px;
+       transition: 0.3s;
+}
+
+.footer .links a:hover {
+       color: white;
+}
+
+.footer .copy {
+       font-size: 13px;
+       color: #475569;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
-       .cards,
-       .grid {
+       /* ===== HERO ===== */
+       .hero {
               flex-direction: column;
+              text-align: center;
+              padding: 80px 20px;
        }
+
+       .hero h1 {
+              font-size: 32px;
+       }
+
+       .hero p {
+              font-size: 14px;
+       }
+
+       .hero .buttons {
+              flex-direction: column;
+              align-items: center;
+       }
+
+       .hero .btn {
+              width: 100%;
+              max-width: 300px;
+       }
+
+       .hero-image {
+              margin-top: 40px;
+       }
+
+       .mockup img {
+              width: 100%;
+       }
+
+       .floating-card {
+              position: static;
+              margin-top: 15px;
+       }
+
+       /* ===== HEADER ===== */
+       header {
+              padding: 15px 20px;
+       }
+
+       header nav {
+              display: none;
+              /* depois a gente pode fazer menu hambúrguer */
+       }
+
+       /* ===== PROBLEMA / SOLUÇÃO / BENEFÍCIOS ===== */
+       .problema-grid,
+       .solucao-grid,
+       .beneficios-grid {
+              grid-template-columns: 1fr;
+       }
+
+       /* ===== TEXTOS ===== */
+       h2 {
+              font-size: 26px;
+       }
+
+       /* ===== BOTÕES GERAIS ===== */
+       .buttons {
+              flex-direction: column;
+              gap: 10px;
+       }
+
+       .btn {
+              width: 100%;
+              text-align: center;
+       }
+
+       /* ===== CTA FINAL ===== */
+       .cta-final h2 {
+              font-size: 28px;
+       }
+
 }
