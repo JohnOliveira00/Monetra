@@ -497,6 +497,17 @@ section {
        object-fit: cover;
 }
 
+@media screen and (max-width: 900px) {
+       .demo {
+              flex-direction: column;
+              text-align: center;
+       }
+
+       .text-demo {
+              margin: 30px auto 0;
+       }
+}
+
 /* BENEFÍCIOS */
 .beneficios {
        background: #f1f5f9;
