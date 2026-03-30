@@ -18,6 +18,7 @@ O projeto tem como objetivo demonstrar habilidades em desenvolvimento front-end,
 - Simular uma apresentação de produto digital (finanças)
 - Com interatividades que atraem o usuário
 
+
 ---
 
 ##  Tecnologias Utilizadas
@@ -37,8 +38,11 @@ O projeto tem como objetivo demonstrar habilidades em desenvolvimento front-end,
 - Layout totalmente responsivo  
 -  Design moderno e intuitivo  
 -  Navegação fluida  
--  Estrutura organizada e escalável  
-   ---
+-  Estrutura organizada e escalável
+
+  
+  ---
+
 
 ##  Preview do Projeto
 
