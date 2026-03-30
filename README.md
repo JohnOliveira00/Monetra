@@ -33,6 +33,7 @@ O projeto tem como objetivo demonstrar habilidades em desenvolvimento front-end,
 ##  Funcionalidades
 
 - Organização financeira sem a necessidade de anotações ou planilhas complexas
+- Foco em bater metas financeiras e economizar com mais facilidade
 - Layout totalmente responsivo  
 -  Design moderno e intuitivo  
 -  Navegação fluida  
