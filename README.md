@@ -16,6 +16,7 @@ O projeto tem como objetivo demonstrar habilidades em desenvolvimento front-end,
 - Aplicar boas práticas de UI/UX  
 - Estruturar um layout limpo e profissional  
 - Simular uma apresentação de produto digital (finanças)
+- Com interatividades que atraem o usuário
 
 ---
 
