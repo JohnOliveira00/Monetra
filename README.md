@@ -2,7 +2,7 @@
 
 ---
 
-##  Sobre o Projeto
+##  Sobre o Projeto 
 
 O **Monetra Landing** é uma landing page desenvolvida com foco em apresentar uma solução digital voltada para gestão financeira de forma moderna, intuitiva e responsiva.
 
